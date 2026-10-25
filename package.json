@@ -1,0 +1,12 @@
+{
+  "name": "ai-enabled-recruitment-platform",
+  "version": "1.0.0",
+  "description": "AI-Enabled Recruitment Platform for Resume Screening and Candidate Matching",
+  "scripts": {
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
