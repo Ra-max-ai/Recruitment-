@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Base API instance configured for our Node/Express backend
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: `${import.meta.env.VITE_API_URL}/api`,
 });
 
 // Interceptor to automatically attach JWT token from localStorage if user is logged in

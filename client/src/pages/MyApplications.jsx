@@ -326,7 +326,7 @@ export default function MyApplications() {
 
                   <div style={{ display: "flex", gap: "8px" }}>
                     <a
-                      href={`http://localhost:5000${app.resumeFilePath}`}
+                      href={`${import.meta.env.VITE_API_URL}${app.resumeFilePath}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-secondary btn-sm"

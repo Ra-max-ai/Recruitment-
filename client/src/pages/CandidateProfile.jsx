@@ -373,7 +373,7 @@ export default function CandidateProfile() {
                       href={
                         resume.filePath.startsWith("http")
                           ? resume.filePath
-                          : `http://localhost:5000${resume.filePath.startsWith("/") ? "" : "/"}${resume.filePath.replace(/\\/g, "/")}`
+                          : `${import.meta.env.VITE_API_URL}${resume.filePath.startsWith("/") ? "" : "/"}${resume.filePath.replace(/\\/g, "/")}`
                       }
                       target="_blank"
                       rel="noreferrer"

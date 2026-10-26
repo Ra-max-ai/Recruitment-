@@ -389,7 +389,7 @@ export default function JobApplicants() {
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "10px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                     <a
-                      href={`http://localhost:5000${app.resumeFilePath}`}
+                      href={`${import.meta.env.VITE_API_URL}${app.resumeFilePath}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn btn-secondary btn-sm"

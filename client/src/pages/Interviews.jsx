@@ -159,7 +159,7 @@ export default function Interviews() {
 
                 <div style={{ display: "flex", gap: "6px" }}>
                   <a
-                    href={`http://localhost:5000${item.resumeFilePath}`}
+                    href={`${import.meta.env.VITE_API_URL}${item.resumeFilePath}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-secondary btn-sm"
